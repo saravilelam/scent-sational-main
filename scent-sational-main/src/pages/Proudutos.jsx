@@ -38,7 +38,6 @@ export function Produtos() {
                             <H2SubtituloBtn>Valor Total:</H2SubtituloBtn> 
                             <H2Subtitulo>R$500</H2Subtitulo>
                         </div>
-                        <img src="./src/assets/final.png" alt="Projeto final" className="absolute md:right-80 right-1.5 md:bottom-2 -bottom-227  w-[121px] sm:w-[350px]  " />
                     </section>
                 </div>
             </div>
