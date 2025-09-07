@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+    --color-azul: #B0C3D2;
+    --color-azulzinho: #74839E;
+    --color-azulescuro: #3C4C6B;
+    --color-marrom: #A47972;
+
+    --color-darkazul: #74839E;
+    --color-darkbg: #3C4C6B;
+}
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+@custom-variant light (&:where([data-theme="light"], [data-theme="light"] *));
