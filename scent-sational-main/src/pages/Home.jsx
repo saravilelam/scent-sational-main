@@ -1,6 +1,8 @@
 import { H2Subtitulo, H2SubtituloBtn, P } from "../components/Texto.jsx"
 import Header from "../components/Header"
 import homeImg from "../assets/home.png"
+import alvo from "../assets/alvo.png"
+import alvodark from "../assets/alvodark.png"
 import { useTema } from "../context/Theme"
 
 export function Home() {
@@ -30,7 +32,7 @@ export function Home() {
 
       <section className="bg-white dark:bg-darkbg flex-1 flex flex-col md:flex-row justify-around items-center px-6 md:px-16 gap-8 md:gap-0 pb-7 pt-7">
         <div className="flex flex-col items-center text-center max-w-[300px]">
-          <img src={tema === "light" ? "./src/assets/alvo.png" : "./src/assets/alvodark.png"} alt="Alvo" className="h-22 mb-4"/>
+          <img src={tema === "light" ? alvo : alvodark} alt="Alvo" className="h-22 mb-4"/>
           <P>Promover bem-estar, foco e relaxamento unindo tecnologia e aromaterapia.</P>
         </div>
 
