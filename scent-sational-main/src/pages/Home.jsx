@@ -3,6 +3,10 @@ import Header from "../components/Header"
 import homeImg from "../assets/home.png"
 import alvo from "../assets/alvo.png"
 import alvodark from "../assets/alvodark.png"
+import saude from "../assets/saude.png"
+import saudedark from "../assets/saudedark.png"
+import aroma from "../assets/aroma.png"
+import aromadark from "../assets/aromadark.png"
 import { useTema } from "../context/Theme"
 
 export function Home() {
@@ -37,12 +41,12 @@ export function Home() {
         </div>
 
         <div className="flex flex-col items-center text-center max-w-[300px]">
-          <img src={tema === "light" ? "./src/assets/saude.png" : "./src/assets/saudedark.png"} alt="Saúde" className="h-22 mb-4"/>
+          <img src={tema === "light" ? saude : saudedark} alt="Saúde" className="h-22 mb-4"/>
           <P>Para quem busca qualidade de vida, bem-estar, relaxamento e foco no dia a dia.</P>
         </div>
 
         <div className="flex flex-col items-center text-center max-w-[300px]">
-          <img src={tema === "light" ? "./src/assets/aroma.png" : "./src/assets/aromadark.png"} alt="Aroma" className="h-22 mb-4"/>
+          <img src={tema === "light" ? aroma : aromadark} alt="Aroma" className="h-22 mb-4"/>
           <P>Escolha, ative e controle seus aromas. Bem-estar inteligente, do seu jeito, no seu tempo.</P>
         </div>
       </section>
