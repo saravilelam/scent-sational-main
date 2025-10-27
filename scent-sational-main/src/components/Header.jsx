@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom'
 import logo from "../assets/logo.png"
 import {  H2Subtitulo } from "../components/Texto"
 import { useTema } from "../context/Theme"
+import temalight from "../assets/temalight.png"
+import menuiconlight from "../assets/menuiconlight.png"
+import menuicon from "../assets/menuicon.png"
+
 
 export default function Header({ className = "", Titulo = false }) {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -25,7 +29,7 @@ export default function Header({ className = "", Titulo = false }) {
             </div>
 
             <div className="hidden md:flex items-center gap-4">
-                <img src={tema === "light" ? "./src/assets/temalight.png" : "./src/assets/temadark.png"} alt="Alterar tema" onClick={alterarTema} className="h-5 cursor-pointer"/>
+                <img src={tema === "light" ? {temalight } : "./src/assets/temadark.png"} alt="Alterar tema" onClick={alterarTema} className="h-5 cursor-pointer"/>
             </div>
 
             {!Titulo&& (
@@ -36,8 +40,8 @@ export default function Header({ className = "", Titulo = false }) {
             )}
 
             <button className="md:hidden z-50" onClick={() => setMenuOpen(!menuOpen)}>
-                <img src="./src/assets/menuiconlight.png" alt="Menu" className="h-6 w-6 hidden dark:block  "/>
-                <img src="./src/assets/menuicon.png" alt="Menu" className="h-6 w-6 dark:hidden" />
+                <img src={menuiconlight} alt="Menu" className="h-6 w-6 hidden dark:block  "/>
+                <img src={menuicon} alt="Menu" className="h-6 w-6 dark:hidden" />
             </button>
             
 
@@ -53,7 +57,7 @@ export default function Header({ className = "", Titulo = false }) {
                     </nav>
 
                     <div className="mt-3 mb-3 flex justify-center items-center gap-4">
-                        <img src={tema === "light" ? "./src/assets/temalight.png" : "./src/assets/temadark.png"} alt="Alterar tema" onClick={alterarTema} className="h-5 cursor-pointer"/>
+                        <img src={tema === "light" ? {temalight} : "./src/assets/temadark.png"} alt="Alterar tema" onClick={alterarTema} className="h-5 cursor-pointer"/>
                     </div>
                 </div>
                 
