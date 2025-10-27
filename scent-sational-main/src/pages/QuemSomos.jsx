@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom"
 import Header from "../components/Header"
 import { H1, H2, H2Subtitulo, H2SubtituloBtn } from "../components/Texto"
+import bianca from "../assets/bianca.png"
+import giulia from "../assets/giulia.png"
+import sara from "../assets/sara.png"
+import victoria from "../assets/victoria.png"
 
 export function QuemSomos() {
     return (
@@ -13,19 +17,19 @@ export function QuemSomos() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-8">
                     <div className="flex flex-col items-center">
-                        <img src="./src/assets/bianca.png" alt="Foto da Bianca"  />
+                        <img src={bianca} alt="Foto da Bianca"  />
                         <H2 className="text-azulescuro dark:text-white">Bianca</H2>
                     </div>
                     <div className="flex flex-col items-center">
-                        <img src="./src/assets/giulia.png" alt="Foto da Giulia"  />
+                        <img src={giulia} alt="Foto da Giulia"  />
                         <H2 className="text-azulescuro dark:text-white">Giulia</H2>
                     </div>
                     <div className="flex flex-col items-center">
-                        <img src="./src/assets/sara.png" alt="Foto da Sara"  />
+                        <img src={sara} alt="Foto da Sara"  />
                         <H2 className="text-azulescuro dark:text-white">Sara</H2>
                     </div>
                     <div className="flex flex-col items-center">
-                        <img src="./src/assets/victoria.png" alt="Foto da Victoria" />
+                        <img src={victoria} alt="Foto da Victoria" />
                         <H2 className="text-azulescuro dark:text-white">Victoria</H2>
                     </div>
                 </div>    

@@ -1,3 +1,5 @@
+import final from "../assets/final.png"
+import video from "../assets/video.png"
 import { Link } from 'react-router-dom'
 import Header from "../components/Header"
 import { H1, H2Subtitulo, H2SubtituloBtn, P } from "../components/Texto"
@@ -63,10 +65,10 @@ export function Manual() {
                 <section className="bg-azulzinho dark:bg-darkbg  rounded-[15px] w-full max-w-[980px] mt-8 mb-2 flex items-center justify-center px-4 py-6">
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6">
                         
-                        <img src="./src/assets/final.png" alt="Projeto Final" className="md:h-[421px] h-[253px] object-contain"/>
+                        <img src={final} alt="Projeto Final" className="md:h-[421px] h-[253px] object-contain"/>
 
                         <div className="flex items-center justify-center md:h-[220px] md:w-[320px] h-[137px] w-[220px] shadow-md">
-                            <img src="./src/assets/video.png" alt="" className='rounded-[12px]'/>
+                            <img src={video} alt="" className='rounded-[12px]'/>
                         </div>
                     </div>
                 </section>

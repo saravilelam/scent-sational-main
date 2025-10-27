@@ -1,6 +1,8 @@
+import video from "../assets/video.png"
 import Header from "../components/Header"
 import { H1, H2Subtitulo } from "../components/Texto"
 import { Button_jogar } from "../components/Button"
+
 
 export function Jogo() {
     return (
@@ -21,7 +23,7 @@ export function Jogo() {
 
 
                 <section className="flex flex-col items-center">
-                    <img src="./src/assets/video.png" alt="Tumb do Vídeo"/>
+                    <img src={video} alt="Vídeo"/>
                     <div className="mt-6">
                         <Button_jogar text="JOGAR" />
                     </div>
