@@ -4,6 +4,7 @@ import logo from "../assets/logo.png"
 import {  H2Subtitulo } from "../components/Texto"
 import { useTema } from "../context/Theme"
 import temalight from "../assets/temalight.png"
+import temadark from "../assets/temadark.png"
 import menuiconlight from "../assets/menuiconlight.png"
 import menuicon from "../assets/menuicon.png"
 
@@ -29,7 +30,7 @@ export default function Header({ className = "", Titulo = false }) {
             </div>
 
             <div className="hidden md:flex items-center gap-4">
-                <img src={tema === "light" ? {temalight } : "./src/assets/temadark.png"} alt="Alterar tema" onClick={alterarTema} className="h-5 cursor-pointer"/>
+                <img src={tema === "light" ? temalight  : temadark} alt="Alterar tema" onClick={alterarTema} className="h-5 cursor-pointer"/>
             </div>
 
             {!Titulo&& (
@@ -57,7 +58,7 @@ export default function Header({ className = "", Titulo = false }) {
                     </nav>
 
                     <div className="mt-3 mb-3 flex justify-center items-center gap-4">
-                        <img src={tema === "light" ? {temalight} : "./src/assets/temadark.png"} alt="Alterar tema" onClick={alterarTema} className="h-5 cursor-pointer"/>
+                        <img src={tema === "light" ? {temalight} :temadark} alt="Alterar tema" onClick={alterarTema} className="h-5 cursor-pointer"/>
                     </div>
                 </div>
                 
